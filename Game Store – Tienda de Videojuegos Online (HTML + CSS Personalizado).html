@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Videojuegos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <header>
+       <div class="menu conteiner"><!--Actúa como un contenedor que agrupa todos los elementos relacionados con el menú, probablemente estilizado con CSS a través de las clases menu y conteiner.-->
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="" class="logo-img">
+        </a>
+            <!--Representa un enlace al logo de la página.
+            Normalmente, al hacer clic, este enlace lleva al inicio de la página (href="#").-->
+            <input type="checkbox" id="menu"/>
+            <!--Es un checkbox oculto que controla la visibilidad del menú.
+            Permite alternar entre mostrar y ocultar el menú cuando el usuario interactúa con el ícono.
+            Este enfoque es común para crear menús responsivos en dispositivos móviles.-->
+            <label for="menu">
+            <!--El <label> está asociado al checkbox (por el atributo for="menu"), lo que significa que al hacer clic en el ícono contenido dentro del <label>, se activa/desactiva el checkbox.-->
+                <img src="images/menu.png" class="menu-icono" alt="menu">
+                <!--Es el ícono del menú representado por una imagen (normalmente un ícono "hamburguesa" con tres líneas horizontales).
+                Sirve como un botón visual para abrir/cerrar el menú.-->
+            </label>
+            <nav class="navbar"> 
+            <!--Representa la barra de navegación que contiene los enlaces del menú.
+            Se estiliza y posiciona mediante la clase navbar.-->
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+                <!--Dentro de <nav>, se usa una lista no ordenada (<ul>) para estructurar los elementos del menú.
+                    Cada elemento de la lista (<li>) contiene un enlace (<a>) a una sección de la página:
+                        Inicio
+                        Servicios
+                        Productos
+                        Contacto-->
+            </nav>
+       </div>
+       <div class="header-content conteiner">
+        <!--Contenedor principal para el contenido del encabezado.
+        Tiene la clase header-content, que probablemente se utiliza en CSS para aplicar estilos específicos, como disposición o diseño visual.
+        La clase conteiner (quizás un error ortográfico de "container") sugiere que este div está centrado o tiene márgenes para alinear el contenido.-->
+        <div class="header-txt">
+                <h1>Compra tu <span>juego</span> <br> favorito aqui</h1>
+                <!--El título principal de la sección. Se indica que los usuarios pueden comprar juegos favoritos aquí.
+                La etiqueta <span> resalta la palabra "juego", que podría tener un estilo especial en CSS (por ejemplo, color o fuente diferente).
+                El elemento <br> introduce un salto de línea para que el texto quede en dos líneas.-->
+                <p>
+                    Game Store es una innovadora página de ventas en línea diseñada específicamente para los amantes de los videojuegos 
+                    que buscan las mejores ofertas en títulos clasicos y de última generación.
+                </p>
+
+                <div class="buttons">
+                    <a href="#" class="btn-1">Informacion</a>
+                    <a href="#" class="btn-1">Juegos</a>
+                </div>
+                <!--Contiene dos botones que sirven como enlaces para que los usuarios naveguen hacia otras partes del sitio web:
+                Botón "Información": Dirige a una página (el enlace está vacío con href="#", por lo que el destino debe ser configurado).
+                Botón "Juegos": Similar al primero, pero destinado a la sección o página de juegos.
+                Ambos botones tienen la clase btn-1, que probablemente se utiliza en CSS para aplicar estilos consistentes a los botones (por ejemplo, tamaño, color o interacciones como el hover).-->
+        </div>
+       </div>
+    </header>
+
+    <section class="popular conteiner">
+    <!--<section>: Agrupa contenido relacionado. Aquí, representa una sección específica de la página web destinada a "Juegos populares".
+    Clase popular: Probablemente usada en CSS para aplicar estilos específicos a esta sección, como colores, márgenes o disposición.
+    Clase conteiner: (quizás "container" con error de ortografía) podría utilizarse para centrar el contenido o aplicar márgenes laterales uniformes.-->
+    <h2>Juegos populares</h2>
+
+
+        <div class="popular content">
+        <!--<div> con clase popular content: Sirve como un contenedor para agrupar las imágenes dentro de esta sección.
+        Etiquetas <img>: Representan cada imagen de un juego popular. Cada una tiene:
+        src: La ubicación del archivo de imagen (carpeta "images" con nombres como g1.jpg, g2.jpg, etc.).
+        alt: Texto alternativo vacío (que debería describir las imágenes para accesibilidad o en caso de error de carga).-->
+            <img src="images/g1.jpg" alt="">
+            <img src="images/g2.jpg" alt="">
+            <img src="images/g3.jpg" alt="">
+            <img src="images/g4.jpg" alt="">
+            <img src="images/g5.jpg" alt="">
+            <img src="images/g6.jpg" alt="">
+            <img src="images/g7.jpg" alt=""> 
+            <img src="images/g8.jpg" alt=""> 
+            <img src="images/g9.jpg" alt=""> 
+
+        </div>
+    </section>
+
+    <main class="Product conteiner">
+    <!--Etiqueta <main>: Agrupa el contenido principal de la página, que en este caso es el catálogo de productos.
+    Clase Product: Probablemente usada para aplicar estilos específicos a esta sección.
+    Clase conteiner: (posiblemente "container") podría centrarse o mantener el contenido dentro de un ancho fijo.-->
+        <h2>Todos los juegos</h2>
+
+        <div class="product-content">
+        <!--Etiqueta <div> con clase prouct-content: Agrupa todos los productos del catálogo (nota: hay un error tipográfico en "prouct", debería ser "product").
+        Cada producto está definido dentro de un bloque específico con clases que facilitan la organización y el diseño.-->
+            <div class="product-1">
+                <img src="images/l10.jpg" alt="">
+                <div class="product-txt">
+                       <h3>Call Of Duty Black Ops 6</h3>
+                       <div class="price">
+                        <p>$259.999</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                       </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="images/l11.jpg" alt="">
+                <div class="product-txt">
+                       <h3>Metaphor° ReFantazio</h3>
+                       <div class="price">
+                        <p>$239.999</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                       </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="images/l14.jpg" alt="">
+                <div class="product-txt">
+                       <h3>Final Fantasy 7 | Rebirth</h3>
+                       <div class="price">
+                        <p>$230.000</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                       </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="images/l2.jpg" alt="">
+                <div class="product-txt">
+                       <h3>Battlefield 2042</h3>
+                       <div class="price">
+                        <p>$224.999</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                       </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="images/l18.jpg" alt="">
+                <div class="product-txt">
+                       <h3>Fifa 25</h3>
+                       <div class="price">
+                        <p>$216.047</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                       </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="images/l16.jpg" alt="">
+                <div class="product-txt">
+                       <h3>Dragon Ball Sparking Zero</h3>
+                       <div class="price">
+                        <p>$204.900</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                       </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="images/l6.jpg" alt="">
+                <div class="product-txt">
+                       <h3>Gears of War | Trilogy</h3>
+                       <div class="price">
+                        <p>$199.990</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                       </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="images/l19.jpg" alt="">
+                <div class="product-txt">
+                       <h3>Monster Hunter Wilds</h3>
+                       <div class="price">
+                        <p>$190.900</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                       </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="images/l9.jpg" alt="">
+                <div class="product-txt">
+                       <h3>Battlefield V</h3>
+                       <div class="price">
+                        <p>$189.999</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                       </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="images/l15.jpg" alt="">
+                <div class="product-txt">
+                       <h3>Back Myth Wukong</h3>
+                       <div class="price">
+                        <p>$189.000</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                       </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="images/l12.jpg" alt="">
+                <div class="product-txt">
+                       <h3>Elden Ring</h3>
+                       <div class="price">
+                        <p>$189.900</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                       </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="images/l5.jpg" alt="">
+                <div class="product-txt">
+                       <h3>Baldur's Gate 3</h3>
+                       <div class="price">
+                        <p>$189.000</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                       </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="images/l4.jpg" alt="">
+                <div class="product-txt">
+                       <h3>Cyberpunk 2077</h3>
+                       <div class="price">
+                        <p>$189.000</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                       </div>
+                </div>
+            </div>
+
+            <div class="product-1">
+                <img src="images/l3.jpg" alt="">
+                <div class="product-txt">
+                       <h3>Helldrivers 2</h3>
+                       <div class="price">
+                        <p>$139.000</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                       </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="images/l7.jpg" alt="">
+                <div class="product-txt">
+                       <h3>Crash Bandicoot | N. Sane Trilogy + CTR Nitro-Fueled</h3>
+                       <div class="price">
+                        <p>$51.900</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                       </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="images/l8.jpg" alt="">
+                <div class="product-txt">
+                       <h3>Grand Theft Auto V</h3>
+                       <div class="price">
+                        <p>$36.731</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                       </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="images/l1.jpg" alt="">
+                <div class="product-txt"><!--d-->
+                       <h3>Halo Reach</h3>
+                       <div class="price">
+                        <p>$32.900</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                        <!--Es un enlace estilizado como botón para que el usuario realice la compra.
+                        Clase btn-2 posiblemente usada para aplicar estilos (color, bordes, tamaño, etc.).-->
+                       </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="images/l13.jpg" alt="">
+                <div class="product-txt">
+                       <h3>Balatro</h3>
+                       <div class="price">
+                        <p>$27.500</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </main>
+    <section class="contact conteiner">
+    <!--Probablemente define estilos relacionados con la disposición visual de esta sección.-->
+        <div class="contact content">
+        <!--Esta etiqueta agrupa los elementos de texto y formulario dentro de un contenedor.
+        Clase contact content: Probablemente define estilos relacionados con la disposición visual de esta sección.-->
+            <h3>Subscribete a Game Store</h3>
+            <form>
+                <input type="email" placeholder="Escribe tu correo">
+                <input type="submit" class="btn-3" value="Enviar">
+            </form>
+            <!--<form>: Define un formulario interactivo que recolecta el correo electrónico del usuario.
+            Campo de entrada de correo (<input type="email">):
+            Permite al usuario ingresar su correo electrónico.
+            Atributo placeholder="Escribe tu correo": Muestra texto temporal que guía al usuario sobre qué debe ingresar.
+            Tipo email: Obliga a que se introduzca un correo con formato válido (como ejemplo@dominio.com).
+            Botón de envío (<input type="submit">):
+            Clase btn-3: Define el diseño del botón, como color, tamaño o bordes.
+            Atributo value="Enviar": Define el texto visible en el botón, que es "Enviar".-->
+        </div>
+    </section>
+
+    <footer class="footer container">
+    <!--Define la sección de pie de página de la página web.
+    Clase footer: Se utiliza para aplicar estilos específicos al pie de página desde una hoja de estilos CSS.
+    Clase container: Ayuda a estructurar el contenido, centrándolo o aplicando márgenes y anchos predeterminados.-->
+        <div class="link">
+        <!--Contiene un enlace que representa el logotipo del sitio web.
+        <a href="#" class="logo">logo</a>:
+        Es un enlace que redirige a la página principal (representado por href="#").
+        La clase logo probablemente define estilos como tamaño, fuente o imágenes asociadas al logotipo.-->
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="" class="logo-img">
+        </a>
+        <div class="social-icons">
+            <a href="mailto:barranquillamotors@gmail.com" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.552L0 4.697zm6.761 3.612L1.24 12.255A2 2 0 0 0 2 14h12a2 2 0 0 0 .76-1.745L9.24 8.309l-2.48 2.48zm9.239-3.612l-5.803 3.552L16 11.801V4.697z"/>
+                </svg>
+                <a href="https://www.facebook.com" target="_blank" class="social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                  </svg>
+              </a>
+              <a href="https://www.whatsapp.com" target="_blank" class="social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                  </svg>
+              </a>
+              <a href="https://www.twitter.com" target="_blank" class="social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                      <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                  </svg>
+              </a>
+              <a href="https://www.instagram.com" target="_blank" class="social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                  </svg>
+              </a>
+              <a href="https://www.twitch.tv" target="_blank" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
+                    <path d="M3.857 0L1.429 2.286v11.429h3.429V16l2.857-2.857h2.857L14.571 11V0H3.857zm9.714 9.714l-1.714 1.714H9.429L7.714 13.143V11.43H4.571V1.714h8.57v8zM9.429 3.857v3.429h1.714V3.857H9.429zm-3.429 0v3.429h1.714V3.857H6z"/>
+                </svg>
+            </a>
+          </div>
+        </div>
+
+
+                 <div class="col-md-3 "> <!-- Sección 1 -->
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Redes Sociales</a></li>
+                        <li><a href="#" class="text-white">Atencion al cliente</a></li>
+                        <li><a href="#" class="text-white">Blog de Games Store</a></li>
+                        <li><a href="#" class="text-white">Preguntas frecuentes</a></li>
+                        <li><a href="#" class="text-white">Política de Privacidad</a></li>
+                        <li><a href="#" class="text-white">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+
+                
+                <div class="col-md-3"> <!-- Sección 2 -->
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Contactanos</a></li>
+                        <li><a href="#" class="text-white">Mision & Vision</a></li>
+                        <li><a href="#" class="text-white">Ultimas noticias</a></li>
+                        <li><a href="#" class="text-white">Información legal</a></li>
+                        <li><a href="#" class="text-white">Derechos reservados</a></li>
+                        <li><a href="#" class="text-white">Cookies & datos de sitio</a></li>
+                    </ul>
+                </div>
+                 
+                 <!--Cada elemento <li> representa un enlace (como "Inicio", "Servicios", "Productos" y "Contacto") que ayuda al usuario a navegar por el sitio.-->
+            </div>
+    </footer>
+</body>
+</html>
