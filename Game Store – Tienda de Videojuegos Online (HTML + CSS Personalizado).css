@@ -1,0 +1,516 @@
+/* Importa la fuente "Poppins" desde Google Fonts con varias variaciones de peso */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+/* Define la clase .poppins-regular con la fuente "Poppins" en peso 400 (regular) */
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Define la clase .poppins-medium con la fuente "Poppins" en peso 500 (medium) */
+.poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Define la clase .poppins-semibold con la fuente "Poppins" en peso 600 (semibold) */
+.poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Define la clase .poppins-bold con la fuente "Poppins" en peso 700 (bold) */
+.poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Define la clase .poppins-extrabold con la fuente "Poppins" en peso 800 (extrabold) */
+.poppins-extrabold {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Aplica un reset global: elimina márgenes, rellenos y estilos por defecto en todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Calcula el ancho y alto de los elementos incluyendo padding y border */
+    text-decoration: none; /* Elimina subrayados en enlaces */
+    list-style: none; /* Elimina viñetas en listas */
+}
+
+/* Estilo para el body: establece la fuente "Poppins" y un fondo oscuro */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #08001d;
+}
+
+/* Asegura que las imágenes no excedan el tamaño de su contenedor */
+img {
+    max-width: 100%;
+}
+
+/* Define un contenedor con un ancho máximo y centrado en la página */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Estilos para el menú: posición absoluta, alineación y espaciado */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/* Estilos para el logo: ajusta la imagen del logo */
+.logo img {
+    height: 90px; /* Ajusta la altura del logo según sea necesario */
+    width: auto; /* Mantiene la proporción de la imagen */
+    padding-top: 20px;
+    padding-left: 60px;
+}
+
+
+
+/* Estilos para los elementos del menú: posición, tamaño de fuente y color */
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+        transform: translateX(-30px);
+
+
+}
+
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFFFF;
+    font-weight: 600;
+    display: block;
+}
+
+/* Cambia el color de los enlaces del menú al pasar el cursor */
+.menu .navbar ul li a:hover {
+    color: #E6213C;
+}
+
+/* Oculta el checkbox del menú */
+#menu {
+    display: none;
+}
+
+/* Tamaño del icono del menú */
+.menu-icono {
+    width: 25px;
+}
+
+/* Estilos para la etiqueta del menú: cursor y visibilidad */
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/* Estilos para el contenido del header: disposición flexible */
+/* Estilos para el header: fondo con imagen, centrado vertical y padding */
+/* Estilos para el header: centrado vertical y padding */
+.header-content {
+    background-image: url('images/bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    padding: 80px 0;
+}
+
+.popular content {
+    width: 100px;
+}
+
+/* Estilos para el texto del header: flexibilidad, padding y margen */
+.header-txt {
+    flex-basis: 50%;
+}
+
+/* Estilos para el título del header: tamaño de fuente, color y altura de línea */
+.header-txt h1 {
+    font-size: 60px;
+    color: #FFFFFF;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    padding: 90px;
+}
+
+/* Estilos para el span dentro del título del header: color y margen inferior */
+.header-txt span {
+    color: #E6213C;
+}
+
+/* Estilos para el párrafo del header: tamaño de fuente, color y padding superior */
+.header-txt p {
+    font-size: 17px;
+    color: #E0E0E0;
+    margin-bottom: 25px;
+    padding: 0 90px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para los botones: disposición flexible, margen superior y padding */
+.buttons {
+    display: flex;
+    padding: 40px 0px 0px 100px;
+}
+/* Estilos comunes para los botones: disposición, padding, borde, radio, margen, tamaño de fuente y color */
+.btn-1, .btn-2, .btn-3 {
+    display: inline-block;
+    padding: 11px 35px;
+    border: 2px solid #E6213C;
+    border-radius: 25px;
+    margin-left: 25px; 
+    font-size: 17px;
+    color: #FFFFFF;
+
+}
+
+/* Cambia el fondo del botón al pasar el cursor */
+.btn-1:hover {
+    background-color: #E6213C;
+}
+
+/* Estilos para la sección popular: padding y alineación de texto */
+.popular {
+    padding: 100px 0;
+    text-align: center;
+  
+}
+
+
+/* Tamaño y forma para organizar las imagenes del "popular content"*/
+.popular img {
+    width: 400px;
+    margin: 18px;
+
+  
+}
+
+
+
+/* Centrar todos los elementos h2 */
+h2 {
+    color: #FFFFFF;
+    font-size: 35px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+/* Estilos para el contenido popular: disposición flexible y espacio entre elementos */
+.popular-content {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* Tamaño de las imágenes populares */
+.popular-content img {
+    width: 150px;
+}
+
+/* Alternativa de disposición para el contenido popular: diseño de rejilla */
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+/* Estilos para los productos: color de fondo */
+.product-1 {
+    background-color: #33235e;
+    margin: 25px;
+
+}
+
+
+/* Padding interno para el texto del producto */
+.product-txt {
+    padding: 50px 30px;
+
+}
+
+
+
+/* Estilos para los títulos h3: tamaño de fuente, color y margen inferior */
+h3 {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+/* Disposición y alineación para el precio */
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para el texto del precio: tamaño de fuente y color */
+.price p {
+    font-size: 17px;
+    color: #E6213C;
+}
+
+/* Estilos para el botón de compra: padding, color de fondo y margen derecho */
+.btn-2 {
+    padding: 5px 25px;
+    background-color: #E6213C;
+    margin-right: 0;
+}
+
+/* Estilos para la sección de contacto: padding */
+.contact {
+    padding: 90px 300px ;
+}
+
+/* Estilos para el contenido de contacto: color de fondo, padding y radio del borde */
+.contact-content {
+    background-color: #2A223A;
+    text-align: center;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+/* Disposición y alineación del formulario */
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilos para los campos de entrada: padding, color de fondo, borde, radio del borde, contorno, margen derecho y tamaño de fuente */
+input {
+    padding: 18px 25px;
+    background-color: #33235e;
+    border: 0;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 10px;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+
+/* Estilos para el texto de marcador de posición: color y tamaño de fuente */
+::placeholder {
+    color: #E0E0E0;
+    font-size: 17px;
+}
+
+/* Estilos para el botón de envío: color de fondo, cursor y margen derecho */
+.btn-3 {
+    background-color: #E6213C;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+/* Disposición y alineación del pie de página */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+/* Disposición de la lista de enlaces */
+.link ul {
+    display: flex;
+    padding-bottom: 0px;
+    
+}
+
+/* Estilos para los enlaces de la lista: tamaño de fuente, color y margen derecho */
+.link ul li > a {
+    font-size: 17px;
+    color: #FFFFFF;
+    margin-right: 20px;
+}
+
+/* Cambia el color de los enlaces al pasar el cursor */
+.link ul li > a:hover {
+    color: #E6213C;
+}
+
+/* Estilo para centrar el texto */
+.list-unstyled {
+    text-align: center;
+}
+.social-icons {
+    padding-left: 300px; /* Alinear el contenido a la izquierda */
+    padding-bottom: 90px;
+}
+
+.social-icons svg {
+    width: 34px;  /* Ajustar el ancho a 24 píxeles */
+    height: 34px; /* Ajustar la altura a 24 píxeles */
+    margin-right: 10px; /* Espacio entre los iconos */
+    color:#FFFFFF;
+}
+
+/* Efecto hover para iconos de redes sociales: cambiar el color de relleno a azul */
+.social-icons a:hover svg {
+    fill: #E6213C;
+}
+
+/* Mover el texto 50px hacia arriba */
+.move-up {
+    transform: translateY(-50px);
+}
+
+/* Estilo base para los enlaces */
+.text-white {
+    color: white;
+    text-decoration: none;
+}
+
+/* Efecto hover para los enlaces: cambiar el color del texto a azul */
+.text-white:hover {
+    color: #E6213C;
+}
+
+/* Mover el texto 50px hacia arriba */
+.list-unstyled {
+    transform: translateY(-50px);
+}
+
+/* Estilos para pantallas con un ancho máximo de 991px */
+@media(max-width: 991px) {
+    /* Padding para el menú */
+    .menu {
+        padding: 20px;
+    }
+
+    /* Muestra el icono del menú */
+    .menu label {
+        display: initial;
+    }
+
+    /* Estilos para el menú desplegable */
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #E6213C;
+        display: none;
+    }
+
+    /* Cambia el color de los enlaces del menú al pasar el cursor */
+    .menu .navbar ul li a:hover {
+        color: #1b1726;
+    }
+
+    /* Ancho completo para los elementos del menú */
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    /* Muestra el menú cuando el checkbox está activado */
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    /* Ajustes de estilo para el header en pantallas pequeñas */
+    .header {
+        min-height: 0vh;
+        padding: 80px 30px 50px 30px;
+    }
+
+    /* Centra el texto del header y ajusta el ancho */
+    .header-txt {
+        text-align: center;
+        flex-basis: 100%;
+    }
+
+    /* Reduce el tamaño de la fuente del título del header y el margen inferior */
+    .header-txt h1 {
+        font-size: 50px;
+        margin-bottom: 5px;
+    }
+
+    /* Centra los botones */
+    .buttons {
+        justify-content: center;
+    }
+
+    /* Elimina el margen derecho del último botón */
+    .btn-1:last-of-type {
+        margin-right: 0;
+    }
+
+    /* Oculta la sección popular */
+    .popular {
+        display: none;
+    }
+
+    /* Padding para la sección de productos */
+    .product {
+        padding: 30px;
+    }
+
+    /* Disposición de una columna para los productos y espacio entre elementos */
+    .product-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    /* Ancho completo para las imágenes de los productos */
+    .product-1 img {
+       width: 100%;
+
+
+
+    }
+
+    
+
+    /* Padding para la sección de contacto */
+    .contact {
+        padding: 30px;
+    }
+
+    /* Disposición vertical para el formulario */
+    form {
+        flex-direction: column;
+    }
+
+    /* Margen inferior para los campos de entrada */
+    input {
+        margin: 0 0 20px 0;
+    }
+
+    /* Disposición vertical y centrado del pie de página */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    
+    }
+
+    /* Margen superior para la lista de enlaces */
+    .link ul {
+        margin-top: 20px;
+    }
+}
+
