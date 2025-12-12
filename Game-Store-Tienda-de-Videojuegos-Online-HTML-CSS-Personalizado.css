@@ -1,0 +1,470 @@
+/* Imports the "Poppins" font from Google Fonts with various weight variations */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+/* Defines the .poppins-regular class with the "Poppins" font at weight 400 (regular) */
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Defines the .poppins-medium class with the "Poppins" font at weight 500 (medium) */
+.poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Defines the .poppins-semibold class with the "Poppins" font at weight 600 (semibold) */
+.poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Defines the .poppins-bold class with the "Poppins" font at weight 700 (bold) */
+.poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Defines the .poppins-extrabold class with the "Poppins" font at weight 800 (extrabold) */
+.poppins-extrabold {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Applies a global reset: removes margins, paddings and default styles from all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Calculates the width and height including padding and border */
+    text-decoration: none; /* Removes underlines from links */
+    list-style: none; /* Removes bullets from lists */
+}
+
+/* Styles for the body: sets the "Poppins" font and a dark background */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #08001d;
+}
+
+/* Ensures images do not exceed the size of their container */
+img {
+    max-width: 100%;
+}
+
+/* Defines a container with a max width and centered alignment */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Menu styles: absolute position, alignment, and spacing */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo styles: adjusts the logo image */
+.logo img {
+    height: 90px;
+    width: auto;
+    padding-top: 20px;
+    padding-left: 60px;
+}
+
+
+/* Menu item styles: position, font size, and color */
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+    transform: translateX(-30px);
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFFFF;
+    font-weight: 600;
+    display: block;
+}
+
+/* Changes link color on hover */
+.menu .navbar ul li a:hover {
+    color: #E6213C;
+}
+
+/* Hides the menu checkbox */
+#menu {
+    display: none;
+}
+
+/* Menu icon size */
+.menu-icono {
+    width: 25px;
+}
+
+/* Styles for the menu label: cursor and visibility */
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/* Header content styles: background image, vertical alignment, padding */
+.header-content {
+    background-image: url('images/bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    padding: 80px 0;
+}
+
+.popular content {
+    width: 100px;
+}
+
+/* Styles for the header text */
+.header-txt {
+    flex-basis: 50%;
+}
+
+/* Header title styles */
+.header-txt h1 {
+    font-size: 60px;
+    color: #FFFFFF;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    padding: 90px;
+}
+
+/* Span inside header title */
+.header-txt span {
+    color: #E6213C;
+}
+
+/* Header paragraph styles */
+.header-txt p {
+    font-size: 17px;
+    color: #E0E0E0;
+    margin-bottom: 25px;
+    padding: 0 90px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Button container styles */
+.buttons {
+    display: flex;
+    padding: 40px 0px 0px 100px;
+}
+
+/* Shared button styles */
+.btn-1, .btn-2, .btn-3 {
+    display: inline-block;
+    padding: 11px 35px;
+    border: 2px solid #E6213C;
+    border-radius: 25px;
+    margin-left: 25px; 
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+/* Hover effect for button */
+.btn-1:hover {
+    background-color: #E6213C;
+}
+
+/* Popular section */
+.popular {
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Popular images */
+.popular img {
+    width: 400px;
+    margin: 18px;
+}
+
+/* Center all h2 elements */
+h2 {
+    color: #FFFFFF;
+    font-size: 35px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+/* Popular content layout */
+.popular-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Popular images size */
+.popular-content img {
+    width: 150px;
+}
+
+/* Grid layout for products */
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+/* Product card background */
+.product-1 {
+    background-color: #33235e;
+    margin: 25px;
+}
+
+/* Product text padding */
+.product-txt {
+    padding: 50px 30px;
+}
+
+/* h3 titles */
+h3 {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+/* Price section layout */
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Price text */
+.price p {
+    font-size: 17px;
+    color: #E6213C;
+}
+
+/* Buy button */
+.btn-2 {
+    padding: 5px 25px;
+    background-color: #E6213C;
+    margin-right: 0;
+}
+
+/* Contact section */
+.contact {
+    padding: 90px 300px;
+}
+
+/* Contact card */
+.contact-content {
+    background-color: #2A223A;
+    text-align: center;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Input styles */
+input {
+    padding: 18px 25px;
+    background-color: #33235e;
+    border: 0;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 10px;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+
+/* Placeholder text */
+::placeholder {
+    color: #E0E0E0;
+    font-size: 17px;
+}
+
+/* Submit button */
+.btn-3 {
+    background-color: #E6213C;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+/* Footer layout */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+/* Link list layout */
+.link ul {
+    display: flex;
+    padding-bottom: 0px;
+}
+
+/* Link styles */
+.link ul li > a {
+    font-size: 17px;
+    color: #FFFFFF;
+    margin-right: 20px;
+}
+
+/* Hover effect for links */
+.link ul li > a:hover {
+    color: #E6213C;
+}
+
+/* Centered text */
+.list-unstyled {
+    text-align: center;
+}
+
+.social-icons {
+    padding-left: 300px;
+    padding-bottom: 90px;
+}
+
+.social-icons svg {
+    width: 34px;
+    height: 34px;
+    margin-right: 10px;
+    color: #FFFFFF;
+}
+
+/* Hover effect for social icons */
+.social-icons a:hover svg {
+    fill: #E6213C;
+}
+
+/* Move text upward */
+.move-up {
+    transform: translateY(-50px);
+}
+
+/* Base link style */
+.text-white {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover effect turns text red */
+.text-white:hover {
+    color: #E6213C;
+}
+
+/* Move text upward */
+.list-unstyled {
+    transform: translateY(-50px);
+}
+
+/* Responsive styles for screens under 991px */
+@media(max-width: 991px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #E6213C;
+        display: none;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: #1b1726;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+        padding: 80px 30px 50px 30px;
+    }
+
+    .header-txt {
+        text-align: center;
+        flex-basis: 100%;
+    }
+
+    .header-txt h1 {
+        font-size: 50px;
+        margin-bottom: 5px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .btn-1:last-of-type {
+        margin-right: 0;
+    }
+
+    .popular {
+        display: none;
+    }
+
+    .product {
+        padding: 30px;
+    }
+
+    .product-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .product-1 img {
+       width: 100%;
+    }
+
+    .contact {
+        padding: 30px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input {
+        margin: 0 0 20px 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .link ul {
+        margin-top: 20px;
+    }
+}
